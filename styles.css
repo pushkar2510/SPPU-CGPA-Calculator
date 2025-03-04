@@ -1,30 +1,29 @@
-/*for drop down list*/
-.inv {
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    margin-top: 0px;
+    padding: 10px;
+    background-color: #007BFF;
+    color: white;
+    width: 100vw;
+}
+
+#target {
+    padding: 10px;
+    margin: 10px auto;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.calculator-container {
     display: none;
 }
 
 /**/
 
-/*for table style*/
-table {
-    width: 100%;
-    border-collapse: collapse;
-    margin-bottom: 20px;
-    font-size: 1em;
-}
-
-table th,
-table td {
-    border: 1px solid #ddd;
-    padding: 10px;
-    text-align: center;
-}
-
-/* Apply red color to the second column (Lunch) */
-table tr:nth-of-type(2n){background-color: #f2eccd84;}
-
-
-thead {
-    background-color: #3c00ff4d;
-    color: black;
-}

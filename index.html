@@ -5,39 +5,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CGPA Calculator</title>
     <link rel="icon" href="https://img.icons8.com/?size=100&id=0LoWesJsYI80&format=png&color=000000" type="image/png">
-
     <link rel="stylesheet" href="styles.css">
-
 </head>
 <body>
-
-
-  <label for="cars">Select SPPU Syllabus Pattern:</label>
-    <select id="target">
-        <option value="">Select Pattern</option>
-        <option value="eng2019">ENG PAT. 2019</option>
-        <option value="eng2024">ENG PAT. 2024</option>
+    <div class="container">
+        <h1>CGPA Calculator</h1>
         
-    <select>
+        <label for="target">Select SPPU Syllabus Pattern:</label>
+        <select id="target">
+            <option value="">Select Pattern</option>
+            <option value="eng2019">ENG PAT. 2019</option>
+            <option value="eng2024">ENG PAT. 2024</option>
+        </select>
 
     <div id="eng2019" class="inv">
         eng2019
-        <br>
-        <br>
-        <table>
-            <thead>
-                <tr>
-                    <th>Sr. No.</th>
-                    <th>Insem (30)</th>
-                    <th>Endsem (70)</th>
-                    <th>Total (100)</th>
-                    <th>Grade </th>
-                    <th>Grade Pt.(10)</th>
-                </tr>
-            </thead>
-            <tbody id="tableBody"></tbody>
-        </table>
-
 
     </div>
     
@@ -45,12 +27,10 @@
     <div id="eng2024" class="inv">
         
         eng2024
-        <br>
-        <h1>Coming Soon...</h1>
     </div>
     
 
     
+    <script src="main.js"></script>
 </body>
-<script src="main.js"></script>
 </html>
