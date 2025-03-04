@@ -5,3 +5,26 @@
 
 /**/
 
+/*for table style*/
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+    font-size: 1em;
+}
+
+table th,
+table td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: center;
+}
+
+/* Apply red color to the second column (Lunch) */
+table tr:nth-of-type(2n){background-color: #f2eccd84;}
+
+
+thead {
+    background-color: #3c00ff4d;
+    color: black;
+}
