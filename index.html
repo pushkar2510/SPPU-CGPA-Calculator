@@ -11,6 +11,7 @@
 
 <body>
     <div class="container">
+
         <h1>SPPU CGPA Calculator</h1>
 
         <div class="input-section">
@@ -74,4 +75,48 @@
     <script src="main.js"></script>
 </body>
 
+</html>
+=======
+        <h1>CGPA Calculator</h1>
+        
+        <label for="target">Select SPPU Syllabus Pattern:</label>
+        <select id="target">
+            <option value="">Select Pattern</option>
+            <option value="eng2019">ENG PAT. 2019</option>
+            <option value="eng2024">ENG PAT. 2024</option>
+        </select>
+
+        <div id="eng2019" class="calculator-container">
+            <h3>CGPA Calculator (SPPU 2019)</h3>
+            <table id="table2019">
+                <tr>
+                    <th>Subject</th>
+                    <th>Credits</th>
+                    <th>Grade (0-10)</th>
+                </tr>
+            </table>
+            <button onclick="addSubject('table2019')">Add Subject</button>
+            <button onclick="calculateCGPA('table2019', 'cgpa2019')">Calculate CGPA</button>
+            <h3>CGPA: <span id="cgpa2019">0.00</span></h3>
+        </div>
+
+        <div id="eng2024" class="calculator-container">
+            <h3>CGPA Calculator (SPPU 2024)</h3>
+            <table id="table2024">
+                <tr>
+                    <th>Subject</th>
+                    <th>Credits</th>
+                    <th>Grade (0-10)</th>
+                </tr>
+            </table>
+            <button onclick="addSubject('table2024')">Add Subject</button>
+            <button onclick="calculateCGPA('table2024', 'cgpa2024')">Calculate CGPA</button>
+            <h3>CGPA: <span id="cgpa2024">0.00</span></h3>
+        </div>
+    </div>
+    
+
+    
+    <script src="main.js"></script>
+</body>
 </html>
