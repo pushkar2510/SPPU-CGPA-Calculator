@@ -5,13 +5,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SPPU CGPA Calculator</title>
-    <link rel="icon" href="https://img.icons8.com/?size=100&id=0LoWesJsYI80&format=png&color=000000" type="image/png">
+    <link rel="icon" href="./image/logo.png" type="image/png">
     <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
     <div class="container">
-
         <h1>SPPU CGPA Calculator</h1>
 
         <div class="input-section">
@@ -29,7 +28,7 @@
                 <select id="course" required>
                     <option value="">Select Course</option>
                     <option value="engineering">Engineering</option>
-                    <option value="bcs" >BCS</option>
+                    <option value="bcs">BCS</option>
                 </select>
             </div>
 
@@ -53,8 +52,15 @@
             <h2>Subject Details</h2>
             <div id="subjectsList"></div>
             <button id="addSubject" class="btn">Add Subject</button>
+            <button id="calculateCGPA" class="btn">Calculate CGPA</button>
+            <div class="result-box">
+                <div class="result-item">
+                    <span>Your CGPA:</span>
+                    <span id="cgpaResult">--</span>
+                </div>
+            </div>
         </div>
-<!-- convert cgpa to % -->
+
         <div class="converter-section">
             <h2>CGPA to Percentage Converter</h2>
             <div class="converter-box">
@@ -65,7 +71,7 @@
                 <button id="convertCGPA" class="btn">Convert to Percentage</button>
                 <div class="result-box">
                     <div class="result-item">
-                        <span>Equivalent Percentage:</span>
+                        <span>Your Percentage:</span>
                         <span id="convertedPercentage">--</span>
                     </div>
                 </div>
@@ -75,48 +81,4 @@
     <script src="main.js"></script>
 </body>
 
-</html>
-=======
-        <h1>CGPA Calculator</h1>
-        
-        <label for="target">Select SPPU Syllabus Pattern:</label>
-        <select id="target">
-            <option value="">Select Pattern</option>
-            <option value="eng2019">ENG PAT. 2019</option>
-            <option value="eng2024">ENG PAT. 2024</option>
-        </select>
-
-        <div id="eng2019" class="calculator-container">
-            <h3>CGPA Calculator (SPPU 2019)</h3>
-            <table id="table2019">
-                <tr>
-                    <th>Subject</th>
-                    <th>Credits</th>
-                    <th>Grade (0-10)</th>
-                </tr>
-            </table>
-            <button onclick="addSubject('table2019')">Add Subject</button>
-            <button onclick="calculateCGPA('table2019', 'cgpa2019')">Calculate CGPA</button>
-            <h3>CGPA: <span id="cgpa2019">0.00</span></h3>
-        </div>
-
-        <div id="eng2024" class="calculator-container">
-            <h3>CGPA Calculator (SPPU 2024)</h3>
-            <table id="table2024">
-                <tr>
-                    <th>Subject</th>
-                    <th>Credits</th>
-                    <th>Grade (0-10)</th>
-                </tr>
-            </table>
-            <button onclick="addSubject('table2024')">Add Subject</button>
-            <button onclick="calculateCGPA('table2024', 'cgpa2024')">Calculate CGPA</button>
-            <h3>CGPA: <span id="cgpa2024">0.00</span></h3>
-        </div>
-    </div>
-    
-
-    
-    <script src="main.js"></script>
-</body>
 </html>
